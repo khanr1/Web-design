@@ -7,3 +7,5 @@ Tribute page is a small page giving informaton about Hedy Lamaar. The aim of the
 
 * HTML
 * CSS
+
+The preview of the Tribute page can be found <a href="http://htmlpreview.github.io/?https://github.com/khanr1/Web-design/blob/master/TributePage/Hedy_Lamaar.html">here</a>
