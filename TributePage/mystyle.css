@@ -36,8 +36,9 @@ background-color: black;
 
 #Bio{
   border-style: solid;
+  margin:auto;
   padding: 10px 10px 10px 10px;
-  background-color:white;
+  background-color:yellow;
 }
 
 #time{
