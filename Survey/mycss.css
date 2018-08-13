@@ -1,0 +1,45 @@
+body{
+    max-width: 1200px;
+    text-align: center;   
+    background-color: almond;
+    font-family: Montserrat;
+}
+
+#survey-form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    background-color:inherit;
+    grid-gap: 15px;
+    justify-content: center;
+    padding: 15px;
+    align-content: center;
+}
+
+
+.labels{
+    
+    
+    min-width: 155px;
+    padding-top:5px;
+    text-align: right;    
+}
+.inputs{
+    text-align: left;
+    min-width: 155px;
+    padding-top: 2px;    
+}
+
+input[type="submit"]{
+    position:absolute;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    left:40%;
+    top: 100%;
+    min-width: 150px;
+    background-color: black;
+    color:white;
+    font-size:15px;
+}
+    
+

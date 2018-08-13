@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Pizza order</title>
+        <link rel="stylesheet" type="text/css" href="mycss.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    </head>
+    
+    
+    <body>
+        <div >
+            <h1 id="title"> Pizza </h1>
+            <p id="description"> 
+                Please fill the information below to order your Pizza!
+            </p>
+        </div>
+        <form id="survey-form">
+            <div class="labels">
+                <label id="name-label" for="name">Name:</label>
+            </div>
+            <div class="inputs">
+                <input id="name"  class="input-field" name="name" placeholder="Enter your name" required="" type="text">
+            </div>
+            <div class="labels">
+                <label  for="family-name">Family name:</label>
+            </div>
+            <div class="inputs">
+                <input id="family-name-label" class="input-field" name="family-name" placeholder="Enter your family name" required type="text">                     
+            </div>
+             <div class="labels">
+                <label id="email-label" for="email">Email:</label>
+            </div>
+            <div class="inputs">
+                <input  id="email"  id class="input-field" name="email" placeholder="doe@example.com" required="" type="email">                     
+            </div>
+             <div class="labels">
+                <label  id="number-label" for="age">Age:</label>
+            </div>
+            <div class="inputs">
+                <input id="number"  class="input-field" name="age" placeholder="Enter your age" required="" type="number" min="1" max="25">                     
+            </div>
+            
+            <div class="labels">
+                <label   for="profession"> What is your professional situation</label>
+            </div>
+            <div class="inputs">
+                <select id="dropdown" class="input-field" name="profession" >
+                    <option disabled value=""> Select an option</option>
+                    <option value="Umemployed"> Unemployed</option>
+                    <option value="Student"> Student </option>
+                    <option value="Full time job"> Full time job </option>
+                </select>
+            </div>
+            <div class="labels">
+                <label  id="taste-labe" for="taste">How  would you grade our pizza?</label>
+            </div>
+            <div class="inputs">
+                <input type="radio" name="taste" value="bad"> Bad
+                <input type="radio" name="taste" value="average"> Average
+                <input type="radio" name="taste" value="Good"> Good
+            </div>
+             <div class="labels">
+                <label  id="topping-label" for="topping">What topping would you like to have?</label>
+            </div>
+            <div class="inputs">
+                <input type="checkbox" name="topping" value="Garlick"> Garlick <br>
+                <input type="checkbox" name="topping" value="Cheese"> Cheese <br>
+                <input type="checkbox" name="topping" value="Olives"> Olives <br>
+                <input type="checkbox" name="topping" value="Ham"> Ham <br>
+                <input type="checkbox" name="topping" value="Mushroom"> Mushroom<br>
+            </div>
+             <div class="labels">
+                <label  id="Comments-label" for="comments">Do you have any additional information (Building door code etc):</label>
+            </div>
+            <div class="inputs">
+                <textarea  id="comments" class="input-field" name="comments" placeholder="writte you comments here"></textarea>                     
+            </div>
+            <input type="submit" value="Submit">
+            
+             
+        </form>
+        
+    </body>
+</html>
