@@ -9,3 +9,12 @@ Tribute page is a small page giving informaton about Hedy Lamaar. The aim of the
 * CSS
 
 The preview of the Tribute page can be found <a href="http://htmlpreview.github.io/?https://github.com/khanr1/Web-design/blob/master/TributePage/Hedy_Lamaar.html">here</a>
+
+## Survey page.
+
+Survey page is a Pizza ordering page. The aim of this page is to practise the different input types using only
+
+* HTML
+* CSS
+
+The preview of the tribute page can be found <a href="http://htmlpreview.github.io/?https://github.com/khanr1/Web-design/blob/master/Survey/surveyForm.html">here</a>
