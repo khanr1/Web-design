@@ -18,3 +18,13 @@ Survey page is a Pizza ordering page. The aim of this page is to practise the di
 * CSS
 
 The preview of the tribute page can be found <a href="http://htmlpreview.github.io/?https://github.com/khanr1/Web-design/blob/master/Survey/surveyForm.html">here</a>
+
+## Product page.
+
+Product page of a library shop
+
+* HTML
+* CSS
+
+The preview of the tribute page can be found <a href="http://htmlpreview.github.io/?https://github.com/khanr1/Web-design/blob/master/ProductPage/main.html">here</a>
+
