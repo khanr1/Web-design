@@ -3,6 +3,7 @@ body{
     text-align: center;   
     background-color: almond;
     font-family: Montserrat;
+    margin: auto;
 }
 
 #survey-form{
