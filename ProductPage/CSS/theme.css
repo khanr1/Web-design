@@ -34,6 +34,11 @@
 
 a{
     text-decoration: none;
+    color: white;
+    
+}
+a:visited{
+    color:white:
 }
 
 li{
@@ -235,8 +240,8 @@ footer p{
     }
     #nav-bar ul li{
     list-style-type: none;
-    margin: 0px 5px;
-    border: solid red;
+    margin: 5px 5px;
+    
     }
     .nav-link{
         display: block;
