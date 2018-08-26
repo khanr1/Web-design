@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Scala quick notes</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>        
+    <nav id="navbar">
+        <header><h1>Scala Memo</h1></header>
+        <ul>
+            <li> <a class="nav-link" href=#Introduction>Introduction</a></li>
+            <li> <a class="nav-link" href=#Value>Value</a></li>
+            <li> <a class="nav-link" href=#Functions>Functions</a></li>
+            <li> <a class="nav-link" href=#Hello_the_World!>Hello the World!</a></li>
+            <li> <a class="nav-link" href=#References>References</a></li>
+        </ul>
+    </nav>
+    
+    
+    
+    
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header> <h2>Introduction</h2></header>
+
+            <h3>What is Scala </h3>
+            
+            <p>Scala is a modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and type-safe way. It smoothly integrates features of object-oriented and functional languages.</p>
+                
+            <h3> Scala is object-oriented</h3>
+            <p>Scala is a pure object-oriented language in the sense that every value is an object. Types and behavior of objects are described by classes and traits. Classes are extended by subclassing and a flexible mixin-based composition mechanism as a clean replacement for multiple inheritance.</p>
+            
+            <h3> Scala is functional</h3>
+            
+            <p>Scala is also a functional language in the sense that every function is a value. Scala provides a lightweight syntax for defining anonymous functions, it supports higher-order functions, it allows functions to be nested, and supports currying. Scala’s case classes and its built-in support for pattern matching model algebraic types used in many functional programming languages. Singleton objects provide a convenient way to group functions that aren’t members of a class.
+            Furthermore, Scala’s notion of pattern matching naturally extends to the processing of XML data with the help of right-ignoring sequence patterns, by way of general extension via extractor objects. In this context, for comprehensions are useful for formulating queries. These features make Scala ideal for developing applications like web services.</p>
+            
+
+        </section>
+    
+        <section id="Value" class="main-section">
+            <header><h2>Value</h2></header>
+            
+            <p>You can name results of expressions with the <code class="inline">val</code> keyword.</p>
+            <code class="block">
+                val x = 1 + 1
+                println(x) // 2
+            </code>
+            <p>Named results, such as <code class="inline">x</code> here, are called values. Referencing a value does not re-compute it.
+            Values cannot be re-assigned.</p>
+            <code class="block">
+                x = 3 // This does not compile
+            </code>
+            <p>Types of values can be inferred, but you can also explicitly state the type, like this:</p>
+            <code class="block">
+                val x: Int = 1 + 1
+            </code>
+            <p>Notice how the type declaration <code>Int</code> comes after the identifier <code>x</code>. You also need a <code>:</code>.</p>
+           
+        </section>
+        
+        <section id="Functions" class="main-section">
+            <header><h2>Functions</h2></header>           
+
+            <p>Functions are expressions that take parameters.
+
+            You can define an anonymous function (i.e. no name) that returns a given integer plus one:</p>
+            <code class="block">
+                (x: Int) => x + 1
+            </code>
+           <p> On the left of <code> =></code> is a list of parameters. On the right is an expression involving the parameters.You can also name functions.</p>
+            <code class="block">
+                val addOne = (x: Int) => x + 1
+                println(addOne(1)) // 2
+            </code>
+            
+
+        </section>
+        
+       <section  id="Hello_the_World!" class="main-section">
+            <header><h2>Hello the world!</h2></header>           
+
+            <p>   As a first example, we use the standard “Hello, world!” program to demonstrate the use of the Scala tools without knowing too much about the language.</p>
+            <code class="block">
+
+            object HelloWorld {
+                  def main(args: Array[String]): Unit = { 
+                    println("Hello, world!")
+                  }
+            }
+            </code>
+
+
+        </section> 
+        
+       <section  id="References" class="main-section">
+            <header><h2>References</h2></header>      
+
+            <p>This page is just a pratice page. All the content and addional information about Scala can be found on the official <a href="https://docs.scala-lang.org/tour/tour-of-scala.html">scala webpage</a>. Other references: </p>
+           <ul>
+               <li>lorem</li>
+               <li>lorem</li>
+               <li>lorem</li>
+               <li>lorem</li>
+               <li>lorem</li>
+           </ul>
+           
+
+        </section>
+        
+
+    
+    </main>
+</body>
+</html>

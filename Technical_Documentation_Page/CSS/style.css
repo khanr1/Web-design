@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+htlm{
+    height: 100%;
+   
+}
+
+h1{
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+h2{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+   
+}
+
+p{
+    color:#b9d3daff;
+    text-decoration: none;
+    font-size: 27px,
+}
+a{
+    color:#aacad7ff;
+    text-decoration: none;  
+}
+
+
+
+a:visited{
+    color:#aacad7ff
+}
+
+h3{
+    color:#b9d3daff;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+body{
+    background-color:#002b36ff;  
+    margin: 8px;
+    padding: 8p;
+    min-height: 100%;
+    display: grid; 
+    grid-template: "sidebar content";
+    grid-template-columns: 200px 1fr;
+    grid-column-gap: 8px;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+
+}
+
+#navbar{
+    background-color: #27545eff;
+    grid-area: sidebar;
+    padding: 5px;
+}
+#main-doc{
+    background-color: #3f6c77ff ; 
+    grid-area: content;
+    padding: 5px;
+   
+}
+
+.block{
+  display:block;
+  text-align: left;
+  white-space:pre-wrap;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+
+  border-radius:5px;
+  background-color: #b9d3daff;
+  color:#3f6c77ff;
+  padding: 6px 6px;
+  border: solid 1px #002b36ff;
+}
+
+code{
+    background-color: #b9d3daff;
+    color:#3f6c77ff;   
+}
+
+
+
+nav ul{
+    list-style-type: none;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    body{
+        grid-template: "sidebar" "content";
+        grid-row-gap: 8px;
+    }
+    #navbar{
+        align-items: center;
+        justify-content: center;
+    }
+    #navbar header h1{
+        text-align: center;
+        
+    }
+    
+    nav ul{
+        list-style-type: none;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow: auto;
+        
+        
+    }   
+    nav ul li{
+
+
+        padding: 0.4em;  
+         margin: 0 0.5em
+    }
+
+  }
