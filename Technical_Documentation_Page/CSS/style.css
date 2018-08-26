@@ -44,6 +44,7 @@ h3{
 }
 
 body{
+
     background-color:#002b36ff;  
     margin: 8px;
     padding: 8p;
@@ -91,9 +92,20 @@ code{
     color:#3f6c77ff;   
 }
 
+nav header{
+    position: fixed;
 
+}
+
+nav header h1{
+    text-align: center;
+    justify-content: center;
+}
 
 nav ul{
+    
+    position: fixed;
+    top:100px;
     list-style-type: none;
     height: 250px;
     display: flex;
@@ -107,16 +119,25 @@ nav ul{
         grid-template: "sidebar" "content";
         grid-row-gap: 8px;
     }
+
     #navbar{
+        display: block;
+        position:fixed; 
+        min-width: 95.6vw;
+        max-height: 160px;
         align-items: center;
         justify-content: center;
+        z-index: 2;
+    }
+    #navbar header{
+        position:static;
     }
     #navbar header h1{
-        text-align: center;
-        
+        text-align: center;  
     }
     
     nav ul{
+        position: static;
         list-style-type: none;
         height: auto;
         display: flex;
@@ -124,6 +145,7 @@ nav ul{
         flex-wrap: wrap;
         justify-content: space-between;
         overflow: auto;
+        padding-right: 15px;
         
         
     }   
@@ -131,7 +153,10 @@ nav ul{
 
 
         padding: 0.4em;  
-         margin: 0 0.5em
+        margin: 0 0.5em
+    }
+    main{
+        position: relative;
+       top: 141px; 
     }
 
-  }
