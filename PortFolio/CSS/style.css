@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar:400,700,800');
+
+body, html{
+    min-height: 97vh;
+    margin:0;
+    padding: 0;
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+body{
+    background-color: #104891;
+    @include filter-gradient(#104891, #281899, horizontal);
+    @include background-image(linear-gradient(left bottom, #104891 0%,#281899 100%));
+    display:grid;
+    grid-template-areas: "aside content";
+    grid-template-columns: 250px auto;
+    align-items: baseline;
+    padding: 10px 10px;
+    grid-column-gap: 15px;
+    
+}
+
+#aside_warper{
+    grid-area: aside;
+    position:fixed;
+    top:10px;
+    left:10px;
+    min-height:100%;
+
+}
+aside{
+    width: 250px;
+    height: 97vh;
+    background-color: #9db3d0fc;
+    border-radius: 30px;
+    border: solid #130960ff 2px;
+    color: #052a5aff; 
+}
+#aside_header{
+    padding-top:30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    
+}
+#nav_bar{
+   
+    padding-left:15px;
+    margin-top:100px;     
+}
+
+#nav_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 22px;
+    font-weight: bold;  
+    height: 200px;
+    list-style-type: none;
+}
+
+.nal_link{
+
+}
+
+#portrait{
+    max-width: 150px;
+    border: solid white 5px;
+    border-radius:45%;
+}
+
+#content_warper{
+    grid-area: content;
+    height: 100%;
+    overflow-y: auto;
+    color: #9db3d0fc;
+    background-color: #130960ff;
+    border-radius:30px;
+    border: solid #9db3d0fc 2px;
+}
