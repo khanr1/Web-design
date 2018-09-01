@@ -12,8 +12,9 @@ body{
     @include filter-gradient(#104891, #281899, horizontal);
     @include background-image(linear-gradient(left bottom, #104891 0%,#281899 100%));
     display:grid;
-    grid-template-areas: "aside content";
-    grid-template-columns: 250px auto;
+    grid-template-areas: "aside" 
+                         "content";
+    grid-template-rows: 100px auto;
     align-items: baseline;
     padding: 10px 10px;
     grid-column-gap: 15px;
@@ -23,21 +24,25 @@ body{
 #aside_warper{
     grid-area: aside;
     position:fixed;
-    top:10px;
-    left:10px;
-    min-height:100%;
+    min-width:100vw;
+    min-height: 150px;
+    z-index: 1;
+
+    
 
 }
 aside{
-    width: 250px;
-    height: 97vh;
+    max-width:80vw; 
     background-color: #9db3d0fc;
     border-radius: 30px;
     border: solid #130960ff 2px;
     color: #052a5aff; 
+    margin: 0 auto;
 }
 #aside_header{
-    padding-top:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
     text-align: center;
     font-size: 24px;
     font-weight: bolder;
@@ -45,17 +50,16 @@ aside{
 }
 #nav_bar{
    
-    padding-left:15px;
-    margin-top:100px;     
+    padding-left:15px;   
 }
 
 #nav_list{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     font-size: 22px;
     font-weight: bold;  
-    height: 200px;
+    margin: 0px;
     list-style-type: none;
 }
 
@@ -64,17 +68,39 @@ aside{
 }
 
 #portrait{
-    max-width: 150px;
+    height:10vh;
     border: solid white 5px;
     border-radius:45%;
 }
 
 #content_warper{
     grid-area: content;
-    height: 100%;
+    position: relative;
+    top:60px;
+    min-height: 55vh;
+    margin: 0 auto;
+
+}
+
+.content-item{
+    min-width:80vw; 
+    min-height: 100vh;
     overflow-y: auto;
     color: #9db3d0fc;
     background-color: #130960ff;
     border-radius:30px;
     border: solid #9db3d0fc 2px;
+    align-items: center;
+   
+    
+}
+
+.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30em;
+}
+
+h1 {
+    text-align: center;
 }
