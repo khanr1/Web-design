@@ -3,9 +3,18 @@
     padding: 0;
 }
 
+#header_warper{
+    position:fixed;
+    z-index: 1;
+}
+
 #content_warper{
+
     min-height: 100vh;
     margin:0 auto;
+    padding: 0 auto;
+    position: relative;
+    top:20px;
 
 }
 
@@ -28,4 +37,40 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #052a5aff;
+}
+
+#welcome-section{
+    min-height: 100vh;
+    margin:0 auto;
+    padding: 0 auto;
+    position: relative;
+    top:20px;
+}
+#welcome-section p,h1{
+    position: relative;
+    top: 25vh;
+    text-align: justify;
+    margin: auto auto;
+    padding: auto auto;
+    width: 70vw;
+}
+
+#projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding: 0 4px;
+}
+
+.project-tile{
+    min-width: 15%;
+    min-height: 15%;
+}
+
+@media (max-width: 800px) {
+    #projects{
+     display: flex;
+    flex-direction: column;
+    }
 }
