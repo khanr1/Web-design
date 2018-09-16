@@ -64,8 +64,9 @@ nav ul li a{
 }
 
 .project-tile{
-    min-width: 15%;
-    min-height: 15%;
+    max-width: 30vw;
+    max-height: 30vh;
+    border: solid black;
 }
 
 @media (max-width: 800px) {

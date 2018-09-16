@@ -28,7 +28,7 @@ Product page of a library shop
 
 The preview of the product page can be found <a href="http://htmlpreview.github.io/?https://github.com/khanr1/Web-design/blob/master/ProductPage/main.html">here</a>
 
-## Product page.
+## Technical documentation.
 
 Technical documentation about scala.
 
